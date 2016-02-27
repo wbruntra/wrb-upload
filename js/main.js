@@ -45,9 +45,12 @@ function show_photo(data) {
   console.log(JSON.stringify(data));
   var url = '/getphoto?img_id='+data['url']
   img = $('<img>');
-  img.attr('src',url)
-  img.attr('alt','hello there')
-  $('#photos').append(img);
+  img.attr('src',url);
+  img.attr('alt','hello there');
+  div = $('<div>');
+  div.addClass('col-xs-4');
+  div.append(img)
+  $('#photos').append(div);
 }
 
 $('form').submit(function(e){

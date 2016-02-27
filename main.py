@@ -45,7 +45,7 @@ class PhotoUploader(Handler):
         self.render('photos.html')
     def post(self):
         content = self.request.get('img')
-        content = images.resize(content,64,64)
+        # content = images.resize(content,64,64)
         photo = Photo(content=content)
         photo_key = photo.put()
         url_string = photo_key.urlsafe()

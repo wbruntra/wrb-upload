@@ -1,5 +1,7 @@
-body {
-  width: 75%;
-  font-size: 1.25em;
-  background: #588c7e;
+.container {
+}
+
+img {
+  width:100%;
+  height:auto;
 }
